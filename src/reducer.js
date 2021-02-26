@@ -3,6 +3,7 @@ export const initialState = {
   playlists: [],
   playing: false,
   item: null,
+  token: null,
 };
 
 //state is the data above and action is the manipulation we do on the data
@@ -16,7 +17,11 @@ const reducer = (state, action) => {
         ...state,
         user: action.user,
       };
-
+    case "SET_TOKEN":
+      return {
+        ...state,
+        token: action.token,
+      };
     default:
       return state;
   }
