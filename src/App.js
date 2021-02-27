@@ -33,6 +33,7 @@ function App() {
       });
 
       spotify.getUserPlaylists().then((playlists) => {
+        console.log("In App.js:", playlists);
         dispatch({
           type: "SET_PLAYLISTS",
           playlists: playlists,
