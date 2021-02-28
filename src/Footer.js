@@ -13,13 +13,18 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer_left">
-        <p>Album and song details</p>
+        <img className="albumLogo" src="" alt="" />
+        <div className="footer_songInfo">
+          <h4>Yeah!</h4>
+          <p>Usher</p>
+        </div>
       </div>
       <div className="footer_middle">
         <ShuffleIcon className="footer_green" />
         <SkipPreviousIcon className="footer_icon" />
         <PlayCircleOutlineIcon font-size="large" className="footer_icon" />
         <SkipNextIcon className="footer_green" />
+        <RepeatIcon className="footer_green" />
       </div>
       <div className="footer_right">
         <Grid container spacing={2}>
