@@ -1,5 +1,6 @@
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
+import { Avatar } from "@material-ui/core";
 
 const Header = () => {
   return (
@@ -8,7 +9,10 @@ const Header = () => {
         <SearchIcon />
         <input placeholder="Search for Artists,Songs and Albums" type="text" />
       </div>
-      <div className="header_right"></div>
+      <div className="header_right">
+        <Avatar src="" alt="I" />
+        <h4>Indhu</h4>
+      </div>
     </div>
   );
 };
