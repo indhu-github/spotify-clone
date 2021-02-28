@@ -5,7 +5,7 @@ import { Avatar } from "@material-ui/core";
 const Header = () => {
   return (
     <div className="header">
-      <div className="header-left">
+      <div className="header_left">
         <SearchIcon />
         <input placeholder="Search for Artists,Songs and Albums" type="text" />
       </div>
