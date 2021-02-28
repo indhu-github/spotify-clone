@@ -10,6 +10,10 @@
 }
 .footer_left {
   flex: 0.3;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
 }
 .footer_middle {
   flex: 0.4;
@@ -32,4 +36,18 @@
   width: 60px;
   margin-right: 20px;
   object-fit: contain;
+}
+.footer_green {
+  color: #1ed15e;
+}
+.footer_songInfo > h4 {
+  margin-bottom: 5px;
+}
+.footer_songInfo > p {
+  font-size: 12px;
+}
+.footer_icon:hover,
+.footer_green:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
 }
