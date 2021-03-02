@@ -12,7 +12,7 @@ function App() {
   // const [token, setToken] = useState(null);
   const [{ user, token }, dispatch] = useDataLayerValue();
 
-  //Run code based on a givem condition
+  //Run code based on a given condition
   useEffect(() => {
     const hash = getTokenFromUrl();
     window.location.hash = "";
@@ -33,11 +33,16 @@ function App() {
       });
 
       spotify.getUserPlaylists().then((playlists) => {
-        console.log("In App.js:", playlists);
+        //console.log("In App.js:", playlists);
         dispatch({
           type: "SET_PLAYLISTS",
           playlists: playlists,
         });
+      });
+
+      dispatch({
+        type: "SET_SPOTIFY",
+        spotify: spotify,
       });
 
       spotify.getPlaylist("3hV8VFgYqyd6Wtb8hlQFmI").then((response) =>
@@ -49,7 +54,7 @@ function App() {
     }
 
     //console.log("I HAVE A TOKEN>>>", _token);
-  }, []);
+  }, [token, dispatch]);
 
   // console.log("person", user);
   // console.log("token", token);

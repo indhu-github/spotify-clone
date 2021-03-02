@@ -9,7 +9,7 @@ export const initialState = {
 
 //state is the data above and action is the manipulation we do on the data
 const reducer = (state, action) => {
-  console.log(action);
+  // console.log(action);
 
   //Action has 2 values ->type,[payload]
   switch (action.type) {

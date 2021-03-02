@@ -1,6 +1,6 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000";
+const redirectUri = "https://spotify-clone-a62e8.web.app";
 const clientId = "a5fb4e050fa0479abe12641b09f01e19";
 
 const scopes = [
@@ -10,6 +10,11 @@ const scopes = [
   "user-top-read",
   "user-modify-playback-state",
   "playlist-read-private",
+  "streaming",
+  "user-read-email",
+  "user-read-private",
+  "playlist-modify-public",
+  "playlist-modify-private",
 ];
 
 //To get the access token from the url
