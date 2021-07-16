@@ -3,6 +3,7 @@ export const initialState = {
   playlists: [],
   playing: false,
   discover_weekly: null,
+  spotify: null,
   item: null,
   token: null,
 };
@@ -42,6 +43,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         item: action.item,
+      };
+    case "SET_SPOTIFY":
+      return {
+        ...state,
+        spotify: action.spotify,
       };
     default:
       return state;
