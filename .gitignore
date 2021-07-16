@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 # Firebase cache
-.firebase/
+.firebase
